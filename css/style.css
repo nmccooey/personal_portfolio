@@ -1,7 +1,6 @@
 /*----------------------------------------------------
 @File: Default Styles
 @Author: SPONDON IT
-
 This file contains the styling for the actual theme, this
 is the file you need to edit to change the look of the
 theme.
@@ -10,7 +9,6 @@ theme.
 @Template Name: HostHub Construction 
 @Developed By: Naim Lasker
 Author E-mail: naimlasker@gmail.com
-
 =====================================================================*/
 /*----------------------------------------------------*/
 /*font Variables*/
@@ -30,9 +28,8 @@ body {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #ffffff;
-  background-color: #373737;
-}
+  color: #777777;
+  background: url(../img/body-bg.png) no-repeat center; }
 
 h1,
 h2,
@@ -42,7 +39,7 @@ h5,
 h6 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  color: #ffffff; }
+  color: #000000; }
 
 .list {
   list-style: none;
@@ -68,7 +65,7 @@ button:focus {
   padding-right: 0px; }
 
 .white_bg {
-  background: #fff; }
+  background: #fff !important; }
 
 .mb-50 {
   margin-bottom: 50px; }
@@ -161,6 +158,7 @@ button:focus {
   background: -moz-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
   background: -o-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
   background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 /* End Gradient Area css
@@ -344,6 +342,7 @@ button:focus {
 ============================================================================================ */
 .home_banner_area {
   z-index: 1;
+  background: url(../img/banner/home-banner.png) no-repeat top center;
   background-position: center;
   background-size: cover; }
   .home_banner_area .banner_inner {
@@ -376,7 +375,7 @@ button:focus {
           position: absolute;
           top: 50%;
           left: 23%;
-          background: #fff; }
+          background: #000000; }
           @media (max-width: 575px) {
             .home_banner_area .banner_inner .banner_content h3:after {
               display: none; } }
@@ -2505,7 +2504,9 @@ h6 {
 .single-brand-item {
   width: 170px;
   height: 100px;
+  cursor: pointer;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
   box-shadow: none;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
@@ -2531,6 +2532,15 @@ h6 {
     @media only screen and (max-width: 767px) {
       .single-brand-item img {
         max-width: 100px; } }
+  .single-brand-item:hover {
+    border: 1px solid transparent;
+    box-shadow: 0px 8px 30px rgba(118, 85, 225, 0.15); }
+    .single-brand-item:hover img {
+      filter: brightness(0%);
+      -o-filter: brightness(0%);
+      -ms-filter: brightness(0%);
+      -moz-filter: brightness(0%);
+      -webkit-filter: brightness(0%); }
 
 .client-info {
   padding: 25px 30px;
@@ -3240,7 +3250,7 @@ h6 {
 /* Footer Area css
 ============================================================================================ */
 .blog_version .footer_area {
-  background: #373737; }
+  background: #f9f9fd; }
   .blog_version .footer_area:before {
     content: none; }
 
@@ -3254,7 +3264,7 @@ h6 {
     left: 0px;
     right: 0px;
     bottom: 0px;
-    background: #373737;
+    background: #f9f9fd;
     z-index: -1; }
   @media (max-width: 1024px) {
     .footer_area {
@@ -3263,7 +3273,7 @@ h6 {
     text-align: center; }
     .footer_area .footer_logo h4 {
       font-size: 20px;
-      color: #ffffff;
+      color: #000000;
       margin-top: 35px;
       text-transform: uppercase; }
   .footer_area .footer_social {
