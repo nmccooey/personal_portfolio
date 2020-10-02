@@ -2475,7 +2475,7 @@ h6 {
       padding-bottom: 50px; } }
 
 .feature_item {
-  padding: 45px 25px;
+  padding: 50px 25px;
   text-align: center;
   background: #f9f9fd;
   cursor: pointer;
@@ -3259,7 +3259,7 @@ h6 {
   .footer_area:before {
     content: '';
     position: absolute;
-    top: -200px;
+    top: -50px;
     left: 0px;
     right: 0px;
     bottom: 0px;
