@@ -121,6 +121,10 @@ button:focus {
   display: none;
 }
 
+.name-title {
+  font-size: 3.5rem !important;
+}
+
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .section_gap {
@@ -142,7 +146,7 @@ button:focus {
 }
 
 .section_gap_bottom {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 @media (max-width: 1199px) {
   .section_gap_bottom {
@@ -234,6 +238,7 @@ button:focus {
   background: -o-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
   background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
   -webkit-background-clip: text;
+  background-clip: border-box;
   -webkit-text-fill-color: transparent;
 }
 
@@ -3645,7 +3650,7 @@ h6 {
   /* Home Banner Area css
   ============================================================================================ */
   .home_banner_area .banner_inner {
-    padding: 100px 0px;
+    padding-bottom: 50px;
   }
 
   /* End Home Banner Area css
